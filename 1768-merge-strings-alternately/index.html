@@ -1,18 +1,35 @@
 <script>
-
-    /**
-     * @param {string} word1
-     * @param {string} word2
-     * @return {string}
+     /**
+     * Merges two words alternately.
+     *
+     * @param {string} word1 - The first word.
+     * @param {string} word2 - The second word.
+     * @return {string} - The merged word.
      */
-    var mergeAlternately = function(word1, word2) {
-    let result = '';
-    for (let i = 0; i < Math.max(word1.length, word2.length); i++) {
-        if (i < word1.length) result += word1[i];
-        if (i < word2.length) result += word2[i];
-    }
-    return result;
+
+    // Function to merge two strings alternately
+    var mergeAlternately1 = function(word1, word2) {
+        // Initialize an empty string to store the merged result
+        let result = '';
+
+        // Iterate through the characters of the longer of the two words
+        for (let i = 0; i < Math.max(word1.length, word2.length); i++) {
+            // If there are characters remaining in word1, append the current character
+            if (i < word1.length) result += word1[i];
+            
+            // If there are characters remaining in word2, append the current character
+            if (i < word2.length) result += word2[i];
+        }
+        
+        // Return the merged result
+        return result;
     };
+
+    // Tests:
+    mergeAlternately1('abc', 'pqr');    // Output: apbqcr
+    mergeAlternately1('ab', 'pqrs');    // Output: apbqrs
+    mergeAlternately1('abcd', 'pq');    // Output: apbqcd
+    mergeAlternately1('cf', 'eee');     // Output: cfeee
 
     /**
      * Merges two words alternately.
@@ -21,7 +38,9 @@
      * @param {string} word2 - The second word.
      * @return {string} - The merged word.
      */
-    const mergeAlternately = (word1, word2) => {
+
+    // Function to merge two strings alternately 
+    const mergeAlternately2 = (word1, word2) => {
         const lenW1 = word1.length;
         const lenW2 = word2.length;
         let i = 0;
@@ -47,9 +66,9 @@
         return word.join('');
     };
 
-    // Examples:
-    mergeAlternately('abc', 'pqr');    // Output: apbqcr
-    mergeAlternately('ab', 'pqrs');    // Output: apbqrs
-    mergeAlternately('abcd', 'pq');    // Output: apbqcd
-    mergeAlternately('cf', 'eee');     // Output: cfeee
+    // Tests:
+    mergeAlternately2('abc', 'pqr');    // Output: apbqcr
+    mergeAlternately2('ab', 'pqrs');    // Output: apbqrs
+    mergeAlternately2('abcd', 'pq');    // Output: apbqcd
+    mergeAlternately2('cf', 'eee');     // Output: cfeee
 </script>

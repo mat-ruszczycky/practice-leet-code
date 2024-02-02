@@ -10,8 +10,6 @@ Notes to go here
 
 ## Approach
 
-# Complexity
+## Time complexity
 
-### Time complexity:
-
-### Space complexity:
+## Space complexity
