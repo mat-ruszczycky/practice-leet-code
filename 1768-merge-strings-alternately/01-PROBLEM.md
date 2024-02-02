@@ -4,9 +4,9 @@ You are given two strings `word1` and `word2`. Merge the strings by adding lette
 
 `Return` the merged string.
 
-[Leet Code Link](https://leetcode.com/problems/merge-strings-alternately/description/?envType=study-plan-v2&envId=leetcode-75)
-
-[Discussion](./02-DISCUSSION.md)
+- [Leet Code](https://leetcode.com/problems/merge-strings-alternately/description/?envType=study-plan-v2&envId=leetcode-75)
+- [Solutions](./index.html)
+- [Discussion](./02-DISCUSSION.md)
 
 ## Example 1:
 
