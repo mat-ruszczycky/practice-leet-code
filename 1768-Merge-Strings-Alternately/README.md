@@ -6,7 +6,7 @@ You are given two strings `word1` and `word2`. Merge the strings by adding lette
 
 [Leet Code Link](https://leetcode.com/problems/merge-strings-alternately/description/?envType=study-plan-v2&envId=leetcode-75)
 
-##Example 1:
+## Example 1:
 
 ```
 Input: word1 = "abc", word2 = "pqr"
@@ -17,7 +17,7 @@ word2:    p   q   r
 merged: a p b q c r
 ```
 
-##Example 2:
+## Example 2:
 
 ```
 Input: word1 = "ab", word2 = "pqrs"
@@ -28,7 +28,7 @@ word2:    p   q   r   s
 merged: a p b q   r   s
 ```
 
-##Example 3:
+## Example 3:
 
 ```
 Input: word1 = "abcd", word2 = "pq"
@@ -39,7 +39,7 @@ word2:    p   q
 merged: a p b q c   d
 ```
 
-##Constraints:
+## Constraints:
 
 ```
 1. 1 <= word1.length, word2.length <= 100
