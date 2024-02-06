@@ -5,8 +5,6 @@ Notes to go here
 - [Solutions](./index.html)
 - [Problem](./01-PROBLEM.md)
 
-## Intuition
-
 ## Approach
 
 ## Time complexity
