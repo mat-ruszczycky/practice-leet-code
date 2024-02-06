@@ -5,9 +5,45 @@ Notes to go here
 - [Solutions](./index.html)
 - [Problem](./01-PROBLEM.md)
 
-## Intuition
-
 ## Approach
+
+Both `mergeAlternately1` and `mergeAlternately2` functions aim to merge two strings alternately, taking characters from each string in turn until the end of either string is reached. Below are the key steps for each function:
+
+### `mergeAlternately1`:
+
+1. **Initialization**:
+
+- Initialize an empty string (`result`) to store the merged `result`.
+
+2. **Iteration**:
+
+- Iterate through the characters of the longer of the two words using a for loop.
+- Append the current character from `word1` to the `result` if there are characters remaining in `word1`.
+- Append the current character from `word2` to the `result` if there are characters remaining in `word2`.
+
+3. **Concatenation**:
+
+- Return the merged result.
+
+### `mergeAlternately2`:
+
+1. **Initialization**:
+
+- Initialize variables (`lenW1`, `lenW2`, `i`, and `word`) to store the lengths of words and an empty array to store the merged characters (`word`).
+
+2. **Iteration**:
+
+- Use a while loop to iterate through the characters of both `words` until the end of either `word` is reached.
+- Push the current characters from both words alternately into the `word` array.
+
+3. **Remaining Characters Handling**:
+
+- If there are remaining characters in `word1`, concatenate them to the result using `Array.concat()` and `Array.join()`.
+- If there are remaining characters in `word2`, concatenate them to the result using the same approach.
+
+4. **Equal Length Handling**:
+
+- If both words are of equal length, join the characters alternately and return the result.
 
 ## Time complexity
 
