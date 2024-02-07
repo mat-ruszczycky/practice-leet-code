@@ -1,6 +1,5 @@
 # #### Problem Name
 
-
 - [Leet Code](#)
 - [Solutions](./index.html)
 - [Discussion](./02-DISCUSSION.md)
@@ -9,7 +8,6 @@
 
 ```
 ```
-
 
 ## Constraints:
 
