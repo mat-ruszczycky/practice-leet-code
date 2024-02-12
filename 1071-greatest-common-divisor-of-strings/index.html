@@ -1,29 +1,36 @@
 <script>
-    //https://www.khanacademy.org/computing/computer-science/cryptography/modarithmetic/a/the-euclidean-algorithm
+    // Define a function called gcdOfStrings taking two string parameters: str1 and str2
     var gcdOfStrings = function(str1, str2) {
-    
+        
+        // Check if concatenating str1 and str2 is equal to concatenating str2 and str1
         if (str1 + str2 !== str2 + str1) {
+            // If not equal, return an empty string
             return "";
         }
 
+        // Get the lengths of the input strings
         let n = str1.length;
-
         let k = str2.length;
 
+        // Define a recursive function gcds to calculate the greatest common divisor using the Euclidean algorithm
         let gcds = function (x, y) {
-            
+            // Base case: if y is zero, return x (GCD is found)
             if (!y) {
                 return x;
             }
+            // Recursive case: call gcds with arguments y and x % y
             return gcds(y, x % y);
         }
 
-        let div = gcds (n, k);
+        // Calculate the GCD of the lengths of str1 and str2
+        let div = gcds(n, k);
 
+        // Return a substring of str1 from index 0 to div (longest common prefix)
         return str1.slice(0, div);
     };
 
-    console.log(gcdOfStrings("ABCABC", "ABC"));  // ABC
-    console.log(gcdOfStrings("ABABAB", "ABAB")); // AB
-    console.log(gcdOfStrings("LEET", "CODE"));   // Empty
+    // Test cases
+    console.log(gcdOfStrings("ABCABC", "ABC"));  // Output: ABC
+    console.log(gcdOfStrings("ABABAB", "ABAB")); // Output: AB
+    console.log(gcdOfStrings("LEET", "CODE"));   // Output: Empty
 </script>
