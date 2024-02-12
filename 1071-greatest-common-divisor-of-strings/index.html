@@ -1,3 +1,29 @@
 <script>
-     
+    //https://www.khanacademy.org/computing/computer-science/cryptography/modarithmetic/a/the-euclidean-algorithm
+    var gcdOfStrings = function(str1, str2) {
+    
+        if (str1 + str2 !== str2 + str1) {
+            return "";
+        }
+
+        let n = str1.length;
+
+        let k = str2.length;
+
+        let gcds = function (x, y) {
+            
+            if (!y) {
+                return x;
+            }
+            return gcds(y, x % y);
+        }
+
+        let div = gcds (n, k);
+
+        return str1.slice(0, div);
+    };
+
+    console.log(gcdOfStrings("ABCABC", "ABC"));  // ABC
+    console.log(gcdOfStrings("ABABAB", "ABAB")); // AB
+    console.log(gcdOfStrings("LEET", "CODE"));   // Empty
 </script>
